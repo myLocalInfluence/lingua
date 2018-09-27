@@ -29,7 +29,7 @@ class ComponentConverter extends Converter
     public function parse()
     {
         $this->repository = $this->findInRepository();
-        if ($this->repository) {
+        if ($this->repository === null) {
             throw new \Exception('Language is not in our repository');
         }
         $this->fillNameBag('script', 'scripts');
