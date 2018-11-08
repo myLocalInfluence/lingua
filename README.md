@@ -1,7 +1,7 @@
 # Lingua - Language Codes Converter
 
-[![Travis](https://img.shields.io/travis/whiteCube/lingua.svg)](https://travis-ci.org/whiteCube/lingua)
-[![Code Climate](https://img.shields.io/codeclimate/coverage/github/whiteCube/lingua.svg)](https://codeclimate.com/github/whiteCube/lingua)
+[![Travis](https://img.shields.io/travis/whitecube/lingua.svg)](https://travis-ci.org/whitecube/lingua)
+[![Code Climate](https://img.shields.io/codeclimate/coverage/github/whitecube/lingua.svg)](https://codeclimate.com/github/whitecube/lingua)
 [![GitHub release](https://img.shields.io/github/tag/whiteCube/lingua.svg)](https://github.com/whiteCube/lingua/releases)
 [![Packagist](https://img.shields.io/packagist/dt/whiteCube/Lingua.svg)](https://packagist.org/packages/whitecube/lingua)
 [![GitHub issues](https://img.shields.io/github/issues/whiteCube/lingua.svg)](https://github.com/whiteCube/lingua/issues)
@@ -9,6 +9,9 @@
 [![license](https://img.shields.io/github/license/whiteCube/lingua.svg)](https://github.com/whiteCube/lingua/blob/master/LICENSE)
 
 This package will convert languages _from and to_ some common formats (ISO codes, W3C standards, PHP localization strings), including human-readable strings.
+
+## Installation
+`composer require whitecube/lingua`
 
 ## Content
 
@@ -30,6 +33,8 @@ Available **input and output formats** are:
 ## Usage
 
 The Lingua converter works in two stages: first you'll need to instantiate it by providing the original format, than you can convert this string as many times as you want to any of the available formats.
+
+> Note: you can instanciate some languages with their deprecated ISO code. For example, you can instanciate Hebrew with the ISO 639_1 code "iw" instead of "he".
 
 ### Setters
 
